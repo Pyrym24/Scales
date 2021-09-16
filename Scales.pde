@@ -2,17 +2,17 @@ int x = 0;
 void setup(){
 size(1000,1000);}
 void draw(){
- for(int i = 0; i<=1000;i+=100){
+   for(int i = 0; i<=1000;i+=100){
    for(int j = 0; j<=1000; j+=100){
       Scale(i,j,1);
       System.out.println("finished");
-   }
+  }
  }
 }
 
 void Scale(float xVal, float yVal, float scale){
   stroke(0+(float)(Math.random()*225),0+(float)(Math.random()*225),0+(float)(Math.random()*225));
-  fill(0+(float)(Math.random()*225),0+(float)(Math.random()*225),0+(float)(Math.random()*225));
+  fill(0+(float)(Math.random()*25),0+(float)(Math.random()*25),0+(float)(Math.random()*25));
 if(x<75){
   x++;
 }else{
