@@ -2,12 +2,21 @@ int x = 0;
 void setup(){
 size(1000,1000);}
 void draw(){
-   for(int i = 0; i<=1000;i+=100){
+   int i = 0;
+   while(i<=1000){
+      int j = 0;
+   while(j<=1000){
+     Scale(i,j,1);
+      j+=70;
+   }
+   i+=70;
+   }
+  /*for(int i = 0; i<=1000;i+=100){
    for(int j = 0; j<=1000; j+=100){
-      Scale(i,j,1);
+     Scale(i,j,1);
       System.out.println("finished");
   }
- }
+ }*/
 }
 
 void Scale(float xVal, float yVal, float scale){
